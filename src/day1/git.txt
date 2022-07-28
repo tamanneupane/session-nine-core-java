@@ -1,0 +1,31 @@
+GIT
+- Version Control
+
+Problem before git was used :
+1. Accidental deletion of the files.
+2. Revert the code in case of issues.
+3. Code merge was difficult.
+4. Tracking the changes was difficult.
+5. Syncing only the changed files.
+
+Download git : https://git-scm.com/downloads
+
+Authentication
+1. Basic Authentication (Username and password)
+
+2. SSH Authentication (Key pair are used)
+    - public key (To be shared)
+    - private key (Must not be shared)
+    Creating SSH key : ssh-keygen -t ed25519 -C "your_email@example.com"
+
+git command:
+
+For the first time :
+1. git init
+2. git remote add origin <URL>
+3. git add <file_name> or git add .
+4. git commit -am "<commit_message>"
+5. git push origin <branch_name>
+
+
+
