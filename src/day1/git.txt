@@ -27,5 +27,14 @@ For the first time :
 4. git commit -am "<commit_message>"
 5. git push origin <branch_name>
 
+For Second or onward :
+1. git add .
+2. git commit -am "<commit_message>"
+3. git push origin <branch_name>
+
+
+If accidental removed :
+1. git clone <URL>
+
 
 
