@@ -90,6 +90,14 @@ public class BankAccount {
     // Close Account
     // Deposit
     // Withdraw
-    // transfer
+    // transferBalance
+
+    public void transferBalance(BankAccount fromAccount, BankAccount toAccount, double balance){
+        double fromFinalBalance = fromAccount.getAccountBalance() - balance;
+        double toFinalBalance = toAccount.getAccountBalance() + balance;
+
+        fromAccount.setAccountBalance(fromFinalBalance);
+        toAccount.setAccountBalance(toFinalBalance);
+    }
 
 }
