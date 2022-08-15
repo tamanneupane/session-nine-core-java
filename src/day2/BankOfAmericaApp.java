@@ -60,6 +60,7 @@ public class BankOfAmericaApp {
 
         System.out.println(tamanAccount.getAccountBalance());
         System.out.println(friendAccount.getAccountBalance());
-
     }
+
+
 }
