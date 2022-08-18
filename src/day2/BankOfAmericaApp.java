@@ -2,6 +2,12 @@ package day2;
 
 import day2.BankAccount;
 
+/**
+ * This application is used by Bank of America
+ *
+ * @author Taman Neupane
+ * @version 1.0.0
+ */
 public class BankOfAmericaApp {
 
     public static void main(String[] args) {
@@ -10,7 +16,7 @@ public class BankOfAmericaApp {
 
 //        tamanAccount.setAccountNumber();
         tamanAccount.setAccountHolderName("Taman Neupane");
-        tamanAccount.setAccountType("Saving");
+        tamanAccount.setAccountType(AccountType.SAVING);
         tamanAccount.setConnectedMobileNumber("9851184633");
         tamanAccount.setAddress("Kathmandu, Nepal");
         tamanAccount.setBsbNumber("001");
@@ -18,25 +24,28 @@ public class BankOfAmericaApp {
         tamanAccount.setSocialSecurityNumber("987654321");
 
 
-        System.out.println(tamanAccount.getAccountNumber());
-        System.out.println(tamanAccount.getAccountHolderName());
+//        System.out.println(tamanAccount.getAccountNumber());
+//        System.out.println(tamanAccount.getAccountHolderName());
         System.out.println(tamanAccount.getAccountType());
-        System.out.println(tamanAccount.getConnectedMobileNumber());
-        System.out.println(tamanAccount.getAddress());
-        System.out.println(tamanAccount.getBsbNumber());
-        System.out.println(tamanAccount.getAccountBalance());
+
+//        System.out.println(tamanAccount.getConnectedMobileNumber());
+//        System.out.println(tamanAccount.getAddress());
+//        System.out.println(tamanAccount.getBsbNumber());
+//        System.out.println(tamanAccount.getAccountBalance());
 //        System.out.println(tamanAccount.getSocialSecurityNumber());
 
 
         BankAccount friendAccount = new BankAccount();
 
         friendAccount.setAccountHolderName("Taman Neupane");
-        friendAccount.setAccountType("Saving");
+        friendAccount.setAccountType(AccountType.SAVING);
         friendAccount.setConnectedMobileNumber("9851184633");
         friendAccount.setAddress("Kathmandu, Nepal");
         friendAccount.setBsbNumber("001");
         friendAccount.setAccountBalance(200.0);
         friendAccount.setSocialSecurityNumber("987654321");
+
+        System.out.println(friendAccount.getAccountType());
 
 
         System.out.println("=============== Before Transaction =========");

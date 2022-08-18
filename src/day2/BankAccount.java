@@ -11,7 +11,7 @@ public class BankAccount {
     private String accountHolderName;
 
     // Get and Set both allowed
-    private String accountType;
+    private AccountType accountType;
 
     // Get and Set both allowed
     private String connectedMobileNumber;
@@ -40,11 +40,11 @@ public class BankAccount {
         this.accountHolderName = accountHolderName;
     }
 
-    public String getAccountType() {
+    public AccountType getAccountType() {
         return accountType;
     }
 
-    public void setAccountType(String accountType) {
+    public void setAccountType(AccountType accountType) {
         this.accountType = accountType;
     }
 
@@ -86,18 +86,28 @@ public class BankAccount {
 
     //Behaviour
 
-    // Open Account
-    // Close Account
-    // Deposit
-    // Withdraw
-    // transferBalance
+    /*
+    Open Account
+    Close Account
+    Deposit
+    Withdraw
+    transferBalance
+    */
 
+    /**
+     * kasjkdhkasjdhasdkjaslo
+     * @param fromAccount ashdkjashdkajshd
+     * @param toAccount khaksjdhaksjdhkasd
+     * @param balance kajshdkajshdkjashd
+     */
     public void transferBalance(BankAccount fromAccount, BankAccount toAccount, double balance){
         double fromFinalBalance = fromAccount.getAccountBalance() - balance;
         double toFinalBalance = toAccount.getAccountBalance() + balance;
 
         fromAccount.setAccountBalance(fromFinalBalance);
         toAccount.setAccountBalance(toFinalBalance);
+
+
     }
 
 }
